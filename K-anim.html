@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/Kstyle.css">
+</head>
+<body>
+    <p>
+        Созднаие анимации баззируется на ключевых кадрах (k-frames), 
+        которые позволяют автоматически производить и вопторять
+         эфекты на протяжении заданого временни, 
+         а также преостанавливать анимацию по определёному событию    </p>
+         <p>
+             Animation name - описсывает список применяемых елементов.
+             Animation-direction - за продолжительность анимации. 
+             Animation-timing-function - задаёт сценарий развития событий между кадрами.
+             Animation-iteration-count - овечает за повтор проигравания события.
+             Animation-direction - определяет определения и тип ключевых кадров.
+             Animation-play-state - позволяет запускать или останавливать анимацию по событию .
+             Animation-delay -  отвечает за задержу проигрыывания.
+             Animation-fillmode - определяет какие значеня анимировных css свойвст применяются к обЪекту после заверщения анимации.
+             
+         </p>
+         <div class="vrapper">
+            <div class="content">
+                <div class="content__cercle">
+
+                </div>
+
+            </div>
+         </div>
+         <div class="all">
+
+         
+         <div class="first">
+            <div class="firstone">
+
+            </div>
+            <div class="firsttwo">
+                <h1>
+                    It is blue
+                </h1>
+            </div>
+         </div>
+         <div class="second">
+            <div class="secondone">
+
+            </div>
+            <div class="secondtwo">
+                <h1>
+                    It is blue
+                </h1>
+            </div>
+         </div>
+         <div class="third">
+            <div class="thirdone">
+
+            </div>
+            <div class="thirdtwo">
+                <h1>
+                    It is blue
+                </h1>
+            </div>
+         </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js">
+
+        </script>
+        <script>
+            $(document).ready(function(){
+                $('p:odd').addClass('even')
+            })
+            
+        </script>
+</body>
+</html>

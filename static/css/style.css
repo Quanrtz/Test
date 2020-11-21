@@ -1,0 +1,123 @@
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    justify-content: center;
+    height: 100px;
+
+}
+.header-container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border: 1px solid black;
+
+}
+.header-logo{
+    flex-basis: 20%;
+    border: 1px solid black;
+
+
+}
+.header-container__links{
+    flex-basis: 70%;
+    border: 1px solid black;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+}
+.ul-link{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+
+}
+.link{
+   
+    list-style: none;
+    align-items: center;
+
+}
+.elastic{
+    font-size: 75px;
+    font-size: calc(15px + 50 * (100vw / 1280));
+}
+.header__burger{
+    display: none;
+}
+@media(max-width: 767px){
+    .header-container__links{
+        position: absolute;
+        top: -100%;
+        transition: all 0.3s ease 0s;
+        
+    }
+   
+
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+      }
+      .header__burger span {
+        position: absolute;
+        left: 0;
+        background: #000;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+      }
+      .header__burger::before,
+      .header__burger::after {
+        content: "";
+        background: black;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+      }
+      .header__burger::before {
+        transition: all 0.3s ease 0s;
+      
+        top: 0;
+      }
+      .header__burger::after {
+        transition: all 0.3s ease 0s;
+      
+        bottom: 0;
+      }
+    
+      .header__burger.active span {
+        display: none;
+      }
+      .header__burger.active::before {
+        transition: all 0.3s ease 0s;
+        top: 9px;
+        transform: rotate(45deg);
+      }
+      .header__burger.active::after {
+        transition: all 0.3s ease 0s;
+      
+        bottom: 9px;
+        transform: rotate(-45deg);        
+    }
+    .header-container__links.active{
+        top: 100px;
+        width: 100vw;
+        height: 100vh;
+        background: rgb(97, 191, 253);
+    }
+}
+p::after {
+    content: "";
+    background: red;
+   width: 10px;
+    height: 10px;
+    display: inline-block;
+  }

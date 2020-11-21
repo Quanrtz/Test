@@ -1,0 +1,104 @@
+.section{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+.contenier{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+    flex-direction: column;
+
+}
+.square{
+
+    width: 100px;
+    height: 100px;
+    background-color: forestgreen;
+    border: 1 px solid black;
+    transition:all 0.3s ease 0s;
+
+
+}
+.square:hover{
+    transform:translate(30px,30px) ;
+    transition: 0.3s ease 0s;
+}
+.square2{
+    width: 100px;
+    height: 100px;
+    background-color: forestgreen;
+    border: 1 px solid black;
+    transition:all 0.3s ease 0s;
+
+
+}
+.square2:hover{
+    transform:scale(0.5,1.2) ;
+    transition:  all 0.3s ease 0s;
+}
+
+.square3{
+    width: 100px;
+    height: 100px;
+    background-color: forestgreen;
+    border: 1 px solid black;
+    transition:all 0.3s ease 0s;
+
+
+}
+.square3:hover{
+    transform:rotate(45deg) ;
+    transition: all 0.3s ease 0s;
+}
+.square4{
+    width: 100px;
+    height: 100px;
+    background-color: forestgreen;
+    border: 1 px solid black;
+    transition:all 0.3s ease 0s;
+
+
+}
+.square4:hover{
+    transform: skew(0deg,10deg);
+    transition: all 0.3s ease 0s;
+}
+.square5{
+    width: 100px;
+    height: 100px;
+    background-color: forestgreen;
+    border: 1 px solid black;
+    transition:all 0.3s ease 0s;
+
+
+}
+.square5:hover{
+    transform:translate(30PX,30PX ) rotate(45DEG) scale(1.2) ;
+    transition: all 0.3s ease 0s;
+}
+#persp{
+    perspective: 400px;
+    background-color: greenyellow;
+    transform-style: flat;
+}
+
+.square6{
+    width: 100px;
+    height: 100px;
+    background-color: forestgreen;
+    border: 1 px solid black;
+    transition:all 0.3s ease 0s;
+
+
+}
+
+.square6:hover{
+    transform: rotateX(45deg) scale3d(1.5,1.5,1.5) rotate3d(1,1,1,45deg);
+    transition: all 0.3s ease 0s;
+}
